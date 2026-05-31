@@ -34,8 +34,19 @@ tizen/
 
 The integration tool requires a **BrightSDK API key** passed via the `SDK_API_KEY` environment variable.
 
+**macOS / Linux:**
 ```sh
 export SDK_API_KEY=<your-api-key>
+```
+
+**Windows (PowerShell):**
+```powershell
+$env:SDK_API_KEY = "<your-api-key>"
+```
+
+**Windows (CMD):**
+```cmd
+set SDK_API_KEY=<your-api-key>
 ```
 
 **How to get a key:**

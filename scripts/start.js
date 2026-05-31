@@ -51,7 +51,9 @@ ${ACCENT}╔══════════════════════�
         console.log(`${RED}${BOLD}⚠  SDK_API_KEY is not set${RESET}`);
         console.log(`   The SDK install/update will fail without a valid API key.\n`);
         console.log(`   ${BOLD}Quick fix:${RESET}`);
-        console.log(`     export SDK_API_KEY=<your-api-key>\n`);
+        console.log(`     ${DIM}macOS/Linux:${RESET}  export SDK_API_KEY=<your-api-key>`);
+        console.log(`     ${DIM}PowerShell:${RESET}   $env:SDK_API_KEY = "<your-api-key>"`);
+        console.log(`     ${DIM}CMD:${RESET}          set SDK_API_KEY=<your-api-key>\n`);
         console.log(`   ${BOLD}How to get a key:${RESET}`);
         console.log(`     1. Log in at ${CYAN}https://bright-sdk.com${RESET}`);
         console.log(`     2. Go to Settings → Company profile → API keys`);
