@@ -49,9 +49,11 @@ export SDK_API_KEY=<your-api-key>
 
 ## Quick start
 
-### 1. Install SDK files
+### 1. Clone and run
 
 ```sh
+git clone https://github.com/BrightSDK/bright-sdk-integration-example-tizen.git
+cd bright-sdk-integration-example-tizen
 npm start
 ```
 

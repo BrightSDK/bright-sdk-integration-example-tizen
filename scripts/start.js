@@ -62,11 +62,11 @@ ${ACCENT}╔══════════════════════�
 }
 
 const MENU = [
-    {key: '1', label: 'Install / Update SDK (auto)', cmd: 'npm run update'},
-    {key: '2', label: 'Install / Update SDK (interactive)', cmd: 'npm run update:interactive'},
+    {key: '1', label: 'Install / Update SDK (auto)', cmd: 'npm run update', isInstall: true},
+    {key: '2', label: 'Install / Update SDK (interactive)', cmd: 'npm run update:interactive', isInstall: true},
     {key: '3', label: 'Reset (remove SDK files)', cmd: 'npm run reset'},
     {key: '4', label: 'Show README', action: 'readme'},
-    {key: 'q', label: 'Quit'},
+    {key: 'q', label: 'Exit'},
 ];
 
 function showMenu() {
@@ -107,10 +107,15 @@ function prompt() {
                 path.join(ROOT, 'README.md'), 'utf8');
             console.log(`\n${readme}`);
             console.log(`\n${DIM}--- end of README ---${RESET}\n`);
+            showMenu();
             return prompt();
         }
         run(choice.cmd);
         console.log(`\n${DIM}--- done ---${RESET}\n`);
+        if (choice.isInstall) {
+            console.log(`${BOLD}Next step:${RESET} Open the project in ${CYAN}VS Code${RESET} or ${CYAN}Tizen Studio${RESET} to inspect the integrated SDK files.\n`);
+        }
+        showMenu();
         prompt();
     });
 }
