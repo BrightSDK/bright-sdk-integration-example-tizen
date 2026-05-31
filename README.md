@@ -2,6 +2,8 @@
 
 This folder demonstrates how to integrate BrightSDK into a Samsung Tizen TV app using the **bright-sdk-integration** CLI tool.
 
+![npm start demo](assets/npm_start_demo.gif)
+
 ## Folder structure
 
 ```
