@@ -27,7 +27,7 @@ tizen/
 
 - **Node.js ≥ 18** — to run the integration tool
 - **Tizen Studio** — to package, sign, and deploy to a TV or emulator
-- A **BrightSDK API key** exported as `SDK_API_KEY` — see [obtain-api-key.md](https://brightsdk.github.io/bright-sdk-downloader-rs/obtain-api-key.html)
+- A **BrightSDK API key** exported as `SDK_API_KEY` — see [How to get a key](https://brightsdk.github.io/bright-sdk-downloader-rs/obtain-api-key.html)
 - An internet connection — the SDK zip is downloaded from the CDN on first run
 
 ## API key
